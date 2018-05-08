@@ -29,7 +29,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //Design library for Coordinator layout and Toolbars
-    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:design:27.1.1'
 
     //Circle ImageView
     implementation 'de.hdodenhof:circleimageview:2.2.0'

@@ -4,21 +4,33 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:title="@string/status">
+    </item>
+
+
 
     <item
         android:id="@+id/navigation_activity"
         android:icon="@drawable/ic_activity"
-        android:title="@string/title_activity" />
+        android:title="@string/activity">
+    </item>
+
+
 
     <item
         android:id="@+id/navigation_sleep"
-        android:icon="@drawable/ic_sleep"
-        android:title="@string/title_sleep" />
+        android:icon="@drawable/ic_explore"
+        android:title="@string/explore">
+    </item>
+
+
 
     <item
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:icon="@drawable/ic_profile"
+        android:title= "@string/profile">
+    </item>
+
+
 
 </menu>
