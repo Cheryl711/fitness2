@@ -28,9 +28,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
+    compile 'com.google.firebase:firebase-core:12.0.1'
+    compile 'com.google.firebase:firebase-database:12.0.1'
     //Design library for Coordinator layout and Toolbars
     implementation 'com.android.support:design:27.1.1'
 
     //Circle ImageView
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 }
+apply plugin: 'com.google.gms.google-services'
