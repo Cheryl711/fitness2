@@ -321,7 +321,5 @@ public class StepDetector implements SensorEventListener {
             CountTimeState=2;
         }
 
-        public void start() {
-        }
     }
 }
