@@ -25,8 +25,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.step.pedometer.mystep.config.Constant;
-import com.step.pedometer.mystep.service.StepService;
+import com.example.a62645.fitness.config.Constant;
+import com.example.a62645.fitness.service.StepService;
 
 public class HomeActivity extends AppCompatActivity implements Handler.Callback {
 
