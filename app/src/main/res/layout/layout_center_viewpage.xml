@@ -4,23 +4,56 @@
     <RelativeLayout
         android:layout_width= "match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_step_count"
         >
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Current Steps"/>
+            android:text="Current Steps"
+            android:id="@+id/text_jibu"/>
+        <FrameLayout
+            android:id="@+id/main_frame_container"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/text_jibu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/main_text_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="40sp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"/>
+        </FrameLayout>
+
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calories Burned"
-            android:layout_marginTop="150dp"/>
+            android:layout_marginTop="150dp"
+            android:layout_below="@+id/main_frame_container"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="300dp"
-            android:text="Last Night Sleep"/>
+            android:text="Last Night Sleep"
+            android:layout_below="@+id/main_frame_container"/>
+
         <android.support.v4.view.ViewPager
             android:layout_width="match_parent"
             android:layout_height="match_parent"
