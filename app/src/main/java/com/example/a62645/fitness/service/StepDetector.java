@@ -6,7 +6,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.util.Log;
 
-import com.step.pedometer.mystep.utils.CountDownTimer;
+import com.example.a62645.fitness.Utils.CountDownTimer;
 
 import java.util.Timer;
 import java.util.TimerTask;
