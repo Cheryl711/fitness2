@@ -1,6 +1,7 @@
 package com.example.a62645.fitness.service;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -22,15 +23,16 @@ import android.os.Messenger;
 import android.os.PowerManager;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
-import android.support.v7.app.NotificationCompat;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.step.pedometer.mystep.MainActivity;
-import com.step.pedometer.mystep.R;
-import com.step.pedometer.mystep.config.Constant;
-import com.step.pedometer.mystep.pojo.StepData;
-import com.step.pedometer.mystep.utils.CountDownTimer;
-import com.step.pedometer.mystep.utils.DbUtils;
+import com.example.a62645.fitness.Home.HomeActivity;
+import com.example.a62645.fitness.R;
+import com.example.a62645.fitness.Utils.DbUtils;
+import com.example.a62645.fitness.config.Constant;
+import com.example.a62645.fitness.pojo.StepData;
+import com.example.a62645.fitness.Utils.CountDownTimer;
+import com.example.a62645.fitness.Utils.DbUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -207,9 +209,9 @@ public class StepService extends Service implements SensorEventListener {
         builder=new NotificationCompat.Builder(this);
         builder.setPriority(Notification.PRIORITY_MIN);
         PendingIntent contentIntent=PendingIntent.getActivity(this,0,
-                new Intent(this, MainActivity.class),0);
+                new Intent(this, HomeActivity.class),0);
         builder.setContentIntent(contentIntent);
-        builder.setSmallIcon(R.mipmap.ic_notification);
+        builder.setSmallIcon(R.mipmap.ic_activity);
         builder.setTicker("BasePedo");
         builder.setContentTitle("BasePedo");
         //设置不可清除
